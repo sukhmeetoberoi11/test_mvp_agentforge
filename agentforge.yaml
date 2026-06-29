@@ -1,0 +1,23 @@
+# AgentForge manifest — do not edit manually
+apiVersion: agentforge/v1
+kind: AgentManifest
+
+metadata:
+  agentId: "977c042d-75a2-44b2-b1fe-30a3616debe4"
+  agentVersionId: "7e5f618e-084e-4912-a7e4-911075d08914"
+  slug: "saas-sales-meeting-scheduler-2"
+  name: "SaaS Sales Meeting Scheduler"
+
+spec:
+  runtime:
+    llmModel: "gpt-4o-mini"
+    environment: "kubernetes"
+  resources:
+    cpu: "0.5"
+    memory: "1Gi"
+    replicas: 2
+  healthCheck:
+    path: "/health"
+
+cost:
+  estimatedMonthlyUsd: 45.08

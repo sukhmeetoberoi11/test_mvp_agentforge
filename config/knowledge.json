@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "chunk_size": 0,
+  "vector_store": "",
+  "chunk_overlap": 0,
+  "embedding_model": ""
+}
